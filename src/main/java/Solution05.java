@@ -30,17 +30,17 @@ public class Solution05 {
         System.out.print("What is the second number? ");
         String num2 = input.nextLine();
 
-        int int1 = Integer.parseInt(num1);
-        int int2 = Integer.parseInt(num2);
+        double int1 = Integer.parseInt(num1);
+        double int2 = Integer.parseInt(num2);
 
-        int sum = int1 + int2;
-        int difference = int1 - int2;
-        int product = int1 * int2;
-        int quotient = int1 / int2;
+        double sum = int1 + int2;
+        double difference = int1 - int2;
+        double product = int1 * int2;
+        double quotient = int1 / int2;
 
-        System.out.println(num1 + " + " + num2 + " = " + sum);
-        System.out.println(num1 + " - " + num2 + " = " + difference);
-        System.out.println(num1 + " * " + num2 + " = " + product);
-        System.out.println(num1 + " / " + num2 + " = " + quotient);
+        System.out.printf("%s + %s = %1.0f\n", num1, num2, sum);
+        System.out.printf("%s - %s = %1.0f\n", num1, num2, difference);
+        System.out.printf("%s * %s = %1.0f\n", num1, num2, product);
+        System.out.printf("%s / %s = %.4f\n", num1, num2, quotient);
     }
 }
